@@ -1,8 +1,7 @@
 name: CI
 on:
-  push: {}
+  push:
   pull_request:
-    types: [opened, reopened]
 jobs:
   compiler:
     runs-on: ubuntu-22.04
