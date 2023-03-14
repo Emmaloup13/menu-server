@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - name: Read readme/md
+      - name: Read readme.md
         id: readme
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./readme.md
+          path: ./README.md
       - uses: Code-Hex/neo-cowsay-action@v1
         with:
           message: "${{steps.readme.outputs.content}}"
