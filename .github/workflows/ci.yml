@@ -1,6 +1,8 @@
 name: CI
 on:
-  - push
+  push: {}
+  pull_request:
+    types: [opened, reopened]
 jobs:
   compiler:
     runs-on: ubuntu-22.04
@@ -14,3 +16,4 @@ jobs:
         with:
           maven-version: 3.8.6
       - run: mvn package
+  
