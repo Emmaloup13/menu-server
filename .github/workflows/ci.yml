@@ -15,4 +15,6 @@ jobs:
         with:
           maven-version: 3.8.6
       - run: mvn package
+      - run: mvn test
+      - run: mvn verify
   

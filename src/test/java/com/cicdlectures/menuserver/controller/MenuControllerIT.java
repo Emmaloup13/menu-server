@@ -18,7 +18,6 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.web.client.RestTemplate;
 
 import com.cicdlectures.menuserver.dto.DishDto;
 import com.cicdlectures.menuserver.dto.MenuDto;
